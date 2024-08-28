@@ -1,0 +1,46 @@
+{
+  "topics": [
+    {
+      "name": "topic 1",
+      "type": "info",
+      "items": [
+        {
+          "title": "1. Card Title",
+          "content": "html content of card 1, from info",
+          "img": "./pics/pingu.jpeg"
+        },
+        {
+          "title": "2. Card Title",
+          "content": "html content of card 2, from info",
+          "img": "./pics/pingu.jpeg"
+        },
+        {
+          "title": "3. Card Title",
+          "content": "html content of card 3, from info",
+          "img": "./pics/pingu.jpeg"
+        },
+        {
+          "title": "4. Card Title",
+          "content": "html content of card 4, from info",
+          "img": "./pics/pingu.jpeg"
+        }
+      ]
+    },
+    {
+      "name": "topic 2",
+      "type": "tool",
+      "items": [
+        {
+          "title": "1. Card Title",
+          "content": "html content of card 1, from tools",
+          "img": "./pics/pingu.jpeg"
+        },
+        {
+          "title": "2. Card Title",
+          "content": "html content of card 2, from tools",
+          "img": "./pics/pingu.jpeg"
+        }
+      ]
+    }
+  ]
+}

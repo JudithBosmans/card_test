@@ -1,0 +1,124 @@
+/*******
+GENERAL STYLING OF CARDS
+********/
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.deck {
+  position: absolute;
+  right: 10%;
+  left: 10%;
+  bottom: 15%;
+  top: 10%;
+
+  will-change: transform;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  touch-action: none;
+}
+
+.deck > div {
+  background-color: white;
+  background-size: auto 85%;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  width: calc(80vh * 0.6);
+  max-width: 350px;
+  height: 100vh;
+  max-height: 500px;
+
+  will-change: transform;
+  border-radius: 20px;
+  box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.4),
+    0 10px 10px -10px rgba(50, 50, 73, 0.3);
+}
+
+/*******
+CARD CONTENT
+********/
+
+.cardContent {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardTitle {
+  margin: 0;
+  font-size: 0.1rem;
+  color: rgb(0, 0, 0);
+}
+
+.cardText {
+  margin-top: 5px;
+  font-size: 0.75rem;
+  color: rgb(0, 0, 0);
+}
+
+/*******
+CARD BUTTONS
+********/
+
+.controls {
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.controls button {
+  padding: 10px 20px;
+  background-color: #413a3a;
+  color: #f0f0f0;
+
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 15px;
+}
+
+.controls button:hover {
+  background-color: #f0f0f0;
+}
+
+/*******
+CARD TAB COUNTERS
+********/
+
+.tabBar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.activeTab,
+.inactiveTab {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: gray;
+}
+
+.activeTab {
+  background-color: rgb(0, 0, 0);
+}
